@@ -1,0 +1,57 @@
+{
+  "info": {
+    "name": "API Clima e Cidades",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/v1/health"
+      }
+    },
+    {
+      "name": "Clima - Fortaleza",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/v1/clima/Fortaleza"
+      }
+    },
+    {
+      "name": "Clima - Nome invalido",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/v1/clima/X"
+      }
+    },
+    {
+      "name": "Clima - Cidade nao encontrada",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/v1/clima/CidadeInexistente"
+      }
+    },
+    {
+      "name": "Cidades - CE",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/v1/cidades/CE?limite=5"
+      }
+    },
+    {
+      "name": "Cidades - UF invalida",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/v1/cidades/ceara"
+      }
+    },
+    {
+      "name": "Cidades - UF nao encontrada",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/v1/cidades/XX"
+      }
+    }
+  ]
+}
